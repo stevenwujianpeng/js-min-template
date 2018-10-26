@@ -4,7 +4,7 @@
   "description": "ES6语法快速开发符合业界标准和规范的三方库",
   "main": "dist/index.js",
   "scripts": {
-    "test": "mocha"
+    "lint": "eslint -c .eslintrc.js src"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/stevenwujianpeng/js-min-template/issues"
   },
-  "homepage": "https://github.com/stevenwujianpeng/js-min-template#readme"
+  "homepage": "https://github.com/stevenwujianpeng/js-min-template#readme",
+  "devDependencies": {
+    "eslint": "^5.7.0"
+  }
 }
