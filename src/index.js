@@ -1,5 +1,7 @@
-import Strs from 'string';
+function isString(value) {
+  return typeof value === 'string';
+}
 
-export default {
-    ...Strs,
+export {
+  isString,
 }
