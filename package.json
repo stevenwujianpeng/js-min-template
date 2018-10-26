@@ -1,0 +1,24 @@
+{
+  "name": "cc-js-min-template",
+  "version": "0.1.0",
+  "description": "ES6快速开发一套符合业界标准和规范的三方库",
+  "main": "dist/index",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenwujianpeng/js-min-template.git"
+  },
+  "keywords": [
+    "js",
+    "lib",
+    "tempalte"
+  ],
+  "author": "wujianpeng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevenwujianpeng/js-min-template/issues"
+  },
+  "homepage": "https://github.com/stevenwujianpeng/js-min-template#readme"
+}
