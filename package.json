@@ -1,6 +1,6 @@
 {
   "name": "cc-js-min-template",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "ES6语法快速开发符合业界标准和规范的三方库",
   "main": "dist/index.js",
   "scripts": {
