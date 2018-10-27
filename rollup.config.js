@@ -1,14 +1,26 @@
-import resolve from 'rollup-plugin-node-resolve';
-import pkg from './package.json';
+import babel from 'rollup-plugin-babel';
+import babelrc from 'babelrc-rollup';
+
+let pkg = require('./package.json');
+let external = Object.keys(pkg.dependencies);
+
+let plugins = [
+  babel(babelrc()),
+];
 
 export default {
-  input: 'src/index.js',
-  output: {
-    name: 'lib',
-    file: pkg.main,
-    format: 'esm'
-  },
-  plugins: [
-    resolve()
+  entry: 'src/index.js',
+  plugins: plugins,
+  external: external,
+  targets: [
+    {
+      dest: pkg.main,
+      format: 'umd',
+      moduleName: 'js-min-template',
+    },
+    {
+      dest: pkg.module,
+      format: 'es',
+    }
   ]
 };
