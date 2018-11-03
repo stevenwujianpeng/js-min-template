@@ -6,10 +6,10 @@ import babel from 'rollup-plugin-babel';
 export default {
   input: 'src/index.js',
   output: [{
-    file: 'dist/feType.cjs.js',
+    file: 'dist/lib.cjs.js',
     format: 'cjs'
   }, {
-    file: 'dist/feType.es.js',
+    file: 'dist/lib.es.js',
     format: 'es'
   }],
   plugins: [
