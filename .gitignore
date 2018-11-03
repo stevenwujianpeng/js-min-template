@@ -1,2 +1,5 @@
 node_modules
-dist
+example/node_modules
+.nyc_output
+.DS_Store
+*.log

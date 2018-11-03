@@ -1,26 +1,25 @@
+// rollup.config.js
+import resolve from 'rollup-plugin-node-resolve';
+import commonjs from 'rollup-plugin-commonjs';
 import babel from 'rollup-plugin-babel';
-import babelrc from 'babelrc-rollup';
-
-let pkg = require('./package.json');
-let external = Object.keys(pkg.dependencies);
-
-let plugins = [
-  babel(babelrc()),
-];
 
 export default {
-  entry: 'src/index.js',
-  plugins: plugins,
-  external: external,
-  targets: [
-    {
-      dest: pkg.main,
-      format: 'umd',
-      moduleName: 'js-min-template',
-    },
-    {
-      dest: pkg.module,
-      format: 'es',
-    }
-  ]
+  input: 'src/index.js',
+  output: [{
+    file: 'dist/feType.cjs.js',
+    format: 'cjs'
+  }, {
+    file: 'dist/feType.es.js',
+    format: 'es'
+  }],
+  plugins: [
+    resolve(),
+    commonjs(),
+    babel({
+      exclude: 'node_modules/**', // only transpile our source code
+      runtimeHelpers: true
+    })
+  ],
+  // 需要通过require()引入，而不是直接将代码注入到你的包文件中的配置项
+  external: []
 };
