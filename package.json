@@ -1,6 +1,6 @@
 {
   "name": "js-min-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ES6快速开发一套符合业界标准和规范的三方库模板",
   "main": "dist/lib.cjs.js",
   "module": "dist/lib.es.js",
