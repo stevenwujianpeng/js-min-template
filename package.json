@@ -4,7 +4,6 @@
   "description": "ES6快速开发一套符合业界标准和规范的三方库模板",
   "main": "dist/lib.cjs.js",
   "module": "dist/lib.es.js",
-  "jsnext:main": "dist/js-min-template.mjs",
   "scripts": {
     "clean": "rimraf ./dist",
     "test": "cross-env NODE_ENV=test mocha --compilers js:@babel/register",
