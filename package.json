@@ -1,7 +1,7 @@
 {
-  "name": "js-min-template",
-  "version": "1.0.1",
-  "description": "ES6快速开发一套符合业界标准和规范的三方库模板",
+  "name": "xxx",
+  "version": "x.x.x",
+  "description": "xxx",
   "main": "dist/lib.cjs.js",
   "module": "dist/lib.es.js",
   "scripts": {
@@ -25,22 +25,14 @@
       ]
     }
   },
-  "repository": "https://github.com/stevenwujianpeng/js-min-template.git",
-  "keywords": [
-    "es6",
-    "modules",
-    "rollup",
-    "bundle",
-    "browser"
-  ],
-  "author": "stevenwujianpeng",
-  "license": "MIT",
+  "repository": "",
+  "keywords": [],
+  "author": "",
+  "license": "",
   "bugs": {
-    "url": "https://github.com/stevenwujianpeng/js-min-template/issues"
+    "url": ""
   },
-  "files": [
-    "dist"
-  ],
+  "files": [],
   "homepage": "https://github.com/stevenwujianpeng/js-min-template/blob/master/README.md",
   "dependencies": {
     "@babel/runtime": "^7.1.2"
