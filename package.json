@@ -1,6 +1,6 @@
 {
   "name": "js-min-template",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "js-min-template",
   "main": "dist/js-min-template.cjs.js",
   "module": "dist/js-min-template.es.js",
