@@ -1,7 +1,7 @@
 {
-  "name": "xxx",
-  "version": "x.x.x",
-  "description": "xxx",
+  "name": "lib",
+  "version": "1.0.1",
+  "description": "lib",
   "main": "dist/lib.cjs.js",
   "module": "dist/lib.es.js",
   "scripts": {
