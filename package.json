@@ -1,9 +1,9 @@
 {
-  "name": "lib",
+  "name": "js-min-template",
   "version": "1.0.2",
-  "description": "lib",
-  "main": "dist/lib.cjs.js",
-  "module": "dist/lib.es.js",
+  "description": "js-min-template",
+  "main": "dist/js-min-template.cjs.js",
+  "module": "dist/js-min-template.es.js",
   "scripts": {
     "clean": "rimraf ./dist",
     "test": "cross-env NODE_ENV=test mocha --compilers js:@babel/register",
@@ -32,7 +32,9 @@
   "bugs": {
     "url": ""
   },
-  "files": [],
+  "files": [
+    "dist"
+  ],
   "homepage": "https://github.com/stevenwujianpeng/js-min-template/blob/master/README.md",
   "dependencies": {
     "@babel/runtime": "^7.1.2"
